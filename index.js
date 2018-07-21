@@ -1,2 +1,5 @@
 const path = require('path');
-module.exports = process.env.MMO_ROOT || path.dirname(require.main.filename);;
+
+process.env.MMO_ROOT = process.env.MMO_ROOT || path.dirname(require.main.filename);
+
+module.exports = exports = process.env.MMO_ROOT;
